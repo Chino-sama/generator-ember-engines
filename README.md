@@ -21,11 +21,9 @@ npm install -g generator-ember-engines
 //delete model
 	yo ember-engines:model d <addon-name> <model-name>
 ```
-Options \
+Options
 
-	* --prevent-export - Prevents adding export file in root project
-
-
+ * --prevent-export - Prevents adding export file in root project
 
 ## Getting To Know Yeoman
 
