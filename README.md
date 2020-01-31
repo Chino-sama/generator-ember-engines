@@ -19,7 +19,7 @@ npm install -g generator-ember-engines
 //create model
 	yo ember-engines:model g <addon-name> <model-name> [options]
 //delete model
-	yo ember-engines:model d <addon-name> <model-name>
+	yo ember-engines:model d <addon-name> <model-name> [options]
 ```
 Options
 
