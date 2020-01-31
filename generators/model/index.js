@@ -11,7 +11,7 @@ module.exports = class extends Generator {
 		this.argument("addon", { type: String, required: true });
 		this.argument("model", { type: String, required: true });
 
-		this.option("no-root");
+		this.option("prevent-export");
 	}
 
 	initializing() {
@@ -35,8 +35,8 @@ module.exports = class extends Generator {
 		let modelName = camelCase(this.options.model, { pascalCase: true });
 
 		if (this.actionType === "generate") {
-			if (!this.options["no-root"])
-				this.fs.copy(
+			if (!this.options["prevent-export"])
+				this.fs.copyTpl(
 					this.templatePath("re-export.js"),
 					this.destinationPath(
 						`app/models/${this.options.addon}/${this.options.model}.js`
@@ -46,14 +46,14 @@ module.exports = class extends Generator {
 						modelName: this.options.model
 					}
 				);
-			this.fs.copy(
+			this.fs.copyTpl(
 				this.templatePath("model.js"),
 				this.destinationPath(
 					`lib/api-${this.options.addon}/addon/models/${this.options.addon}/${this.options.model}.js`
 				),
 				{ addonName, modelName }
 			);
-			this.fs.copy(
+			this.fs.copyTpl(
 				this.templatePath("re-export.js"),
 				this.destinationPath(
 					`lib/api-${this.options.addon}/app/models/${this.options.addon}/${this.options.model}.js`
@@ -61,7 +61,7 @@ module.exports = class extends Generator {
 				{ addonName: this.options.addon, modelName: this.options.model }
 			);
 		} else if (this.actionType === "delete") {
-			if (!this.options["no-root"])
+			if (!this.options["prevent-export"])
 				this.fs.delete(
 					`app/models/${this.options.addon}/${this.options.model}.js`
 				);
