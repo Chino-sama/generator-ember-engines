@@ -1,40 +1,42 @@
 {
-	"name": "generator-ember-engines",
-	"version": "0.0.1",
-	"description": "",
-	"homepage": "",
-	"author": {
-		"name": "Chino-sama",
-		"email": "beto4600@gmail.com",
-		"url": ""
-	},
-	"files": [
-		"generators"
-	],
-	"main": "generators/index.js",
-	"keywords": [
-		"yeoman-generator"
-	],
-	"devDependencies": {
-		"jest": "^24.8.0",
-		"yeoman-assert": "^3.1.0",
-		"yeoman-test": "^1.7.0"
-	},
-	"engines": {
-		"npm": ">= 4.0.0"
-	},
-	"dependencies": {
-		"camelcase": "^5.3.1",
-		"chalk": "^2.1.0",
-		"yeoman-generator": "^2.0.1",
-		"yosay": "^2.0.1"
-	},
-	"jest": {
-		"testEnvironment": "node"
-	},
-	"scripts": {
-		"test": "jest"
-	},
-	"repository": "Chino-sama/generator-ember-engines",
-	"license": "MIT"
+  "name": "generator-ember-engines",
+  "version": "0.0.1",
+  "description": "Custom generator for ember-engines files",
+  "homepage": "https://github.com/Chino-sama/generator-ember-engines#readme",
+  "author": "Chino-sama <beto4600@gmail.com>",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "chalk": "^2.1.0",
+    "yeoman-generator": "^2.0.1",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chino-sama/generator-ember-engines.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chino-sama/generator-ember-engines/issues"
+  }
 }

@@ -1,7 +1,6 @@
 # generator-ember-engines [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> 
 
-Custom generator for ember-engines files
+> Custom generator for ember-engines files
 
 ## Installation
 
