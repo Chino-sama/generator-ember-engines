@@ -1,6 +1,8 @@
 # generator-ember-engines [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > 
 
+Custom generator for ember-engines files
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-ember-engines using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
@@ -10,11 +12,19 @@ npm install -g yo
 npm install -g generator-ember-engines
 ```
 
-Then generate your new project:
+## Usage
 
+#### Models
 ```bash
-yo ember-engines
+//create model
+	yo ember-engines:model g <addon-name> <model-name> [options]
+//delete model
+	yo ember-engines:model d <addon-name> <model-name>
 ```
+Options
+	- --prevent-export - Prevents adding export file in root project
+
+
 
 ## Getting To Know Yeoman
 
